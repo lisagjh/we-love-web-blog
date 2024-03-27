@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+
+html {
+  --black: #121212;
+  --white: #fafafa;
+
+  --space-bigger: 2.4rem;
+  --space-big: 2rem;
+  --space-reg: 1.6rem;
+  --space-half: .8rem;
+  --space-small: .4rem;
+  --space-smaller: .2rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Yantramanav", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Yantramanav", sans-serif;
+}
+
+/****/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  height: 10vh;
+  width: 100vw;
+  padding: 0 var(--space-bigger);
+}
+
