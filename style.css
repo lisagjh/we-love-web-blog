@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 
 html {
-  --black: #121212;
+  --black: #080708;
   --white: #fafafa;
+  --platinum: #e6e8e6;
+  --blue: #3772ff;
+  --red: #df2935;
+  --yellow: #fdca40;
 
   --space-bigger: 2.4rem;
   --space-big: 2rem;
   --space-reg: 1.6rem;
-  --space-half: .8rem;
-  --space-small: .4rem;
-  --space-smaller: .2rem;
+  --space-half: 0.8rem;
+  --space-small: 0.4rem;
+  --space-smaller: 0.2rem;
 }
 
 * {
@@ -17,10 +21,7 @@ html {
   font-family: "Yantramanav", sans-serif;
   padding: 0;
   margin: 0;
-}
-
-h1 {
-  font-family: "Yantramanav", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /****/
@@ -36,3 +37,75 @@ header {
   padding: 0 var(--space-bigger);
 }
 
+aside {
+  position: sticky;
+  top: 0.2rem;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  scrollbar-width: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+li {
+  display: grid;
+  place-items: center;
+  min-width: 10rem;
+  height: 10rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin: var(--space-smaller);
+}
+
+li:nth-of-type(3n + 1) {
+  background-color: var(--blue);
+}
+
+li:nth-of-type(3n + 2) {
+  background-color: var(--red);
+}
+
+li:nth-of-type(3n) {
+  background-color: var(--yellow);
+}
+
+/* articles */
+
+article {
+  height: 120vh;
+  border: 1px solid var(--black);
+}
+
+/* media query */
+
+@media (min-width: 750px) {
+  .body-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    position: sticky;
+    top: 1rem;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: column;
+  }
+}
