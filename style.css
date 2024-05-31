@@ -43,6 +43,7 @@ header {
 
 main {
   display: grid;
+  grid-template-columns: 25% 50% 25%;
   place-items: center;
   overflow: hidden;
 }
@@ -52,6 +53,15 @@ main {
 nav {
   position: sticky;
   top: 10px;
+  z-index: 10;
+  padding: var(--space-smaller);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(64, 64, 64, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 ul {
@@ -91,75 +101,72 @@ li:hover {
 .article-container {
   height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   scrollbar-width: none;
   overflow: scroll;
 }
 
 article {
-  height: 30rem;
-  min-width: 30rem;
+  width: 95%;
   background-color: var(--sand);
-  padding: var(--space-smaller);
+  padding: var(--space-small) var(--space-smaller);
   margin: var(--space-half);
   border: 3px solid var(--forest);
   border-radius: 6px;
+
+  & a {
+    color: var(--black);
+  }
+
+  & a:visited {
+    color: var(--black);
+  }
+
+& h2 {
+  font-size: 1.75rem;
+}
 }
 
-article .speaker,
-.date {
-  color: var(--grey);
-  font-style: italic;
-}
+/* sidebar */
 
-.noko {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.gardening {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.antinomy {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.spotify {
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-
-.bones {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.speech-bubble {
-  background-color: var(--white);
-  height: 4rem;
-  width: 3.5rem;
+.sidebar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  translate: -1.5rem -1.5rem;
-  align-self: center;
-  justify-self: end;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar img {
+  margin: var(--space-small);
+}
+
+/* sidebar left */
+
+.sidebar-left img:first-of-type {
+  translate: 2rem 0;
+}
+
+/* sidebar right */
+
+.sidebar-right {
+  padding-top: 8rem;
+}
+
+.sidebar-right img:nth-of-type(2) {
+  translate: -1rem 0;
+  transition: .2s ease-in-out;
+}
+
+.sidebar-right img:nth-of-type(2):hover {
+  translate: 2rem 0;
+  scale: 1.02;
+  rotate: 2deg;
+}
+
+.sidebar-right img:nth-of-type(2):active {
+  scale: 0.98;
+  rotate: 1deg;
 }
