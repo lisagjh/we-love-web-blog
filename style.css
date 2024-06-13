@@ -104,8 +104,6 @@ li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  scrollbar-width: none;
-  overflow: scroll;
 }
 
 article {
@@ -140,10 +138,14 @@ article {
 }
 
 .sidebar img {
-  margin: var(--space-small);
+  margin: var(--space-half) 0;
 }
 
 /* sidebar left */
+
+.sidebar-left {
+  padding-top: 5rem;
+}
 
 .sidebar-left img:first-of-type {
   translate: 2rem 0;
@@ -152,7 +154,7 @@ article {
 /* sidebar right */
 
 .sidebar-right {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
 .sidebar-right img:nth-of-type(2) {
