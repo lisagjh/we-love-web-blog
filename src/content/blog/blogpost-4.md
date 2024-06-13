@@ -1,7 +1,7 @@
 ---
 title: Studie vs Werk
 speaker: "Sanne Swagerman"
-date: 24-05-2024
+pubDate: 24-05-2024
 tags:
   - weloveweb
   - talk

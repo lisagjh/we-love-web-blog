@@ -1,7 +1,7 @@
 ---
 title: Creative Coding
 speaker: "Simon Riisnæs Dagfinrud"
-date: 16-02-2024
+pubDate: 16-02-2024
 tags:
   - weloveweb
   - talk

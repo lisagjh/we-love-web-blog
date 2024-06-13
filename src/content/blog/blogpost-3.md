@@ -1,7 +1,7 @@
 ---
 title: Bug or Feature
 speaker: "Gwen Bogaert"
-date: 26-04-2024
+pubDate: 26-04-2024
 tags:
   - weloveweb
   - talk

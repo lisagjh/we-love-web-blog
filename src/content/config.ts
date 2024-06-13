@@ -7,7 +7,7 @@ const blogCollection = defineCollection({
       speaker: z.string(),
       tags: z.array(z.string()),
       description: z.string(),
-      date: z.string().transform((str) => new Date(str)),
+      pubDate: z.string().transform((str) => new Date(str)),
       imgUrl: image(),
       draft: z.boolean().optional().default(false),
     }),

@@ -1,7 +1,7 @@
 ---
 title: Digital Gardens & the Indie Web
 speaker: "Justus Sturkenboom"
-date: 15-03-2024
+pubDate: 15-03-2024
 tags:
   - weloveweb
   - talk
