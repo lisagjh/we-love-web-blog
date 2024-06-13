@@ -1,10 +1,10 @@
 ---
-layout: ../../layouts/post-layout.astro
+layout: ../../layouts/Post-layout.astro
 title: "Creative Coding"
 speaker: "Simon Riisnæs Dagfinrud"
 date: 16-02-2024
 description: "Creative coding, computational design, and lightweight interactions."
-tags: ["weloveweb", "talk", "creative coding"]
+tags: ["weloveweb", "talk"]
 ---
 
 Simon is a freelance developer and designer, who works with computational design. He

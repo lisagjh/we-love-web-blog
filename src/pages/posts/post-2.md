@@ -1,10 +1,10 @@
 ---
-layout: ../../layouts/post-layout.astro
+layout: ../../layouts/Post-layout.astro
 title: "Digital Gardening"
 speaker: "Justus Sturkenboom"
 date: 15-03-2024
 description: "Digital gardening and the indie web"
-tags: ["weloveweb", "talk", "indie web", "digital gardening", "coding"]
+tags: ["weloveweb", "talk", "coding"]
 ---
 
 Justus told us about his new passion: the indie web! I loved this talk because before i started at FDND I learned some basic HTML and CSS on the indieweb. 

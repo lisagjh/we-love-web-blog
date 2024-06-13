@@ -9,20 +9,19 @@ import "../styles/style.css";
 
 <Header />
 
-<main>
-  
+<main class="home">
   <h1>We Love Web Blog</h1>
-  
   <Layout pageTitle={pageTitle}>
     <ul>
       {
         allPosts.map((post) => (
-          <li>
-            <a class="post-link" href={post.url}>{post.frontmatter.title}</a>
+          <li class="post-li">
+            <a class="post-link" href={post.url}>
+              {post.frontmatter.title}
+            </a>
           </li>
         ))
       }
     </ul>
   </Layout>
-  
 </main>

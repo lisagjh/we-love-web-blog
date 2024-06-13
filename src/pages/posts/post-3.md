@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post-layout.astro
+layout: ../../layouts/Post-layout.astro
 title: "Bug or Feature"
 speaker: "Gwen Bogaert"
 date: 26-04-2024
